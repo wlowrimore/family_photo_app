@@ -1,14 +1,14 @@
-<div class="w-full h-auto">
+<div class="w-full">
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
   <% end %>
 
-  <div class="flex justify-between items-center">
-    <h1 class="font-bold text-6xl text-white">Pins</h1>
-    <%= link_to 'New pin', new_pin_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+  <div class="justify-center items-center">
+    <h1 class="text-4xl uppercase tracking-wider text-white font-sans pb-4">Entries</h1>
+    <%= link_to 'New Entry', new_pin_path, class: "max-w-full rounded-lg shadow-sm shadow-black mb-4 py-1 w-[11%] bg-[#f5f5f5] text-lg text-black-40 text-center hover:bg-[#fff2e3] block font-medium font-sans" %>
   </div>
 
-  <div id="pins" class="min-w-full">
+  <div id="pins" class="min-w-fill pt-16 flex-grid grid-cols-2 gap-y-20">
     <%= render @pins %>
   </div>
 </div>
