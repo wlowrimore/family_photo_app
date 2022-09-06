@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  root "pins#index"
-  resources :pins
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "static_pages#home"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "pins/index"
+  get 'static_pages/home'
+  get 'static_pages/about'
+  resources :pins
 end
