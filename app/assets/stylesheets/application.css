@@ -11,13 +11,15 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require_self
+ *= require_self 
  */
+ *= require material_icons
 
  html {
     padding: 0;
     margin: 0;
-    background: #d78061;
+    background: #efe5f5;
+    /* color: #fff2f2; */
  }
 
 
